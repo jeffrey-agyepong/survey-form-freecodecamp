@@ -1,60 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Survey Form</title>
-</head>
-
-<body>
-  <header>
-    <h1 id="title">FCC Survey Form</h1>
-    <p id="description">Lorem ipsum dolor sit amet elit. Laborum, perferendis.</p>
-  </header>
-  <div class="survey-formbox">
-    <form action="survey-form" id="survey-form" method="post">
-      <label id="name-label">Name <input id="name" type="text" placeholder="Enter Name" required></label>
-      <label id="email-label">Email <input id="email" type="email" placeholder="Enter email" required></label>
-      <label id="number-label">Age <input id="number" type="number" placeholder="Age" min="0" max="30" required></label>
-      <select id="dropdown" type="radio" value="dropdown">
-        <option disabled selected value>Select Your Gender</option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-        <option value="prefer not to say">Prefer not to say</option>
-      </select>
-
-      <h3>What is your favorite programming language?</h3>
-      <label class="container">JavaScript
-        <input type="checkbox" value="JavaScript">
-      </label>
-      <label class="container">Java
-        <input type="checkbox" value="Java">
-      </label>
-      <label class="container">TypeScript
-        <input type="checkbox" value="TypeScript">
-      </label>
-      <label class="container">Python
-        <input type="checkbox" value="Python">
-      </label>
-
-      <h2>What area of IT are you interested in?</h2>
-      <label for="Web Development" class="container">Web Development
-        <input type="radio" value="Web Development" name="IT"></label>
-
-      <label for="Software Development" class="container">Software Development
-        <input type="radio" value="Software Development" name="IT"> </label>
-
-
-      <h3>Why is do you like that programming language?</h3>
-
-
-      <textarea rows="4" cols="30">Enter your comments here...</textarea>
-      <input id="submit" type="submit">
-    </form>
-  </div>
-  <footer> Copyright &copy; 2020 <a href="https://concisewebdesign.site123.me/"> Concise Web Design</a></footer>
-</body>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">FCC Survey Form</h1>
+            <p id="description">Lorem ipsum dolor sit amet elit. Laborum, perferendis.</p>
+        </header>
+        <div class="survey-formbox">
+            <form action="survey-form" id="survey-form" method="post">
+                <label id="name-label">
+                    Name
+                    <input
+                        id="name"
+                        type="text"
+                        placeholder="Enter Name"
+                        required
+                    >
+                </label>
+                <label id="email-label">
+                    Email
+                    <input
+                        id="email"
+                        type="email"
+                        placeholder="Enter email"
+                        required
+                    >
+                </label>
+                <label id="number-label">
+                    Age
+                    <input
+                        id="number"
+                        type="number"
+                        placeholder="Age"
+                        min="0"
+                        max="30"
+                        required
+                    >
+                </label>
+                <select id="dropdown" type="radio" value="dropdown">
+                    <option disabled selected value>Select Your Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="prefer not to say">Prefer not to say</option>
+                </select>
+                <h3>What is your favorite programming language?</h3>
+                <label class="container">
+                    JavaScript
+                    <input type="checkbox" value="JavaScript">
+                </label>
+                <label class="container">
+                    Java
+                    <input type="checkbox" value="Java">
+                </label>
+                <label class="container">
+                    PHP
+                    <input type="checkbox" value="PHP">
+                </label>
+                <label class="container">
+                    Python
+                    <input type="checkbox" value="Python">
+                </label>
+                <h2>What area of IT are you interested in?</h2>
+                <label for="Web Development" class="container">
+                    Web Development
+                    <input type="radio" value="Web Development" name="IT">
+                </label>
+                <label for="Software Development" class="container">
+                    Software Development
+                    <input type="radio" value="Software Development" name="IT">
+                </label>
+                <h3>Why is do you like that programming language?</h3>
+                <textarea rows="4" cols="30">Enter your comments here...</textarea>
+                <input id="submit" type="submit">
+            </form>
+        </div>
+        <footer> Copyright &copy; 2020</footer>
+    </body>
 </html>
